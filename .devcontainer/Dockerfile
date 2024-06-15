@@ -23,6 +23,7 @@ RUN DEBIAN_FRONTEND=noninteractive \
         libxml2-dev \
         libxmlsec1-dev \
         libffi-dev \
+        gnupg2 \
         liblzma-dev
 
 # Python and poetry installation
