@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "surabu-shiki-roma-ji"
+name = "pythonDrill"
 version = "0.1.0"
 description = ""
-authors = ["Yuchiki"]
+authors = ["yuriacats"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -26,5 +26,8 @@ lint.select = [
 ]
 lint.ignore = [
   "D211", # 行数に関するD203と矛盾したルール
-  "D213" # 行数に関するD212と矛盾したルール
+  "D213", # 行数に関するD212と矛盾したルール
+  "D100", # アルゴリズム確認のためDocstringは無効 
+  "D103", # アルゴリズム確認のためDocstringは無効 
+  "T201"  #アルゴリズムの確認のためのものなのでprint関数の使用を許容する 
 ]
