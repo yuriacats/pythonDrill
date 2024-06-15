@@ -20,5 +20,5 @@ def please_conform(caps:str)-> None:
                 print("People in positions", t[0], "through", t[1], "flip your caps!")
 
 if __name__ == "__main__":
-    caps = "FFFBFFBFF"
+    caps = "FFFBFFBBF"
     please_conform(caps)
