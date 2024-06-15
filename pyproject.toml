@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "surabu-shiki-roma-ji"
+version = "0.1.0"
+description = ""
+authors = ["Yuchiki"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ruff = "^0.2.1"
+mecab-python3 = "^1.0.8"
+unidic-lite = "^1.0.8"
+mypy = "^1.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+strict = true
+
+[tool.ruff]
+lint.select = [
+  "ALL"
+]
+lint.ignore = [
+  "D211", # 行数に関するD203と矛盾したルール
+  "D213" # 行数に関するD212と矛盾したルール
+]
